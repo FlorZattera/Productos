@@ -6,12 +6,11 @@ public class Herramientas extends Producto {
     private final double DESCUENTO = 0.05;
     private String metodoPago;
 
-    public Herramientas(String metodoPago, String nombre, double precioDeLista, int cantidad) {
+    public Herramientas(String metodoPago, String nombre, double precioDeLista) {
         this.metodoPago = metodoPago;
         this.nombre = nombre;
         this.precioDeLista = precioDeLista;
         this.categoria = "Herramientas";
-        this.cantidad = cantidad;
     }
 
     @Override
@@ -24,8 +23,8 @@ public class Herramientas extends Producto {
     }
 
     @Override
-    public int getCantidad() {
-        return cantidad;
+    public String getCategoria() {
+        return categoria;
     }
 
     @Override

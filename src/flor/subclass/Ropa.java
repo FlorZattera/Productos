@@ -6,12 +6,11 @@ public class Ropa extends Producto {
     private final double DESCUENTO = 0.15;
     private String tipoRopa;
 
-    public Ropa(String tipoRopa, String nombre, double precioDeLista, int cantidad) {
+    public Ropa(String tipoRopa, String nombre, double precioDeLista) {
         this.tipoRopa = tipoRopa;
         this.nombre = nombre;
         this.precioDeLista = precioDeLista;
         this.categoria = "Ropa";
-        this.cantidad = cantidad;
     }
 
     @Override
@@ -24,8 +23,8 @@ public class Ropa extends Producto {
     }
 
     @Override
-    public int getCantidad() {
-        return cantidad;
+    public String getCategoria() {
+        return categoria;
     }
 
     @Override
